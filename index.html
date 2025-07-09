@@ -113,13 +113,75 @@
         </section>
 
         <!-- Formulaire de réservation -->
-        <section id="reservation" class="">
-
+        <section id="reservation" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Heures d'ouverture
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Lundi: <b>12h00 - 23h00</b></li>
+                                        <li>Mardi: <b>12h00 - 23h00</b></li>
+                                        <li>Mercredi: <b>12h00 - 23h00</b></li>
+                                        <li>Jeudi: <b>12h00 - 23h00</b></li>
+                                        <li>Vendredi: <b>12h00 - 23h00</b></li>
+                                        <li>Samedi: <b>12h00 - 23h00</b></li>
+                                        <li>Dimanche: <b>12h00 - 23h00</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Où nous trouvons-nous ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Au centre de Montpellier, à côté de la gare.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Liens vers les réseaux sociaux -->
-        <section id="reseaux" class="">
-
+        <section id="reseaux" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Nom:</label>
+                            <input type="text" class="form-control" id="exampleInputName" name="exampleInputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputTel" class="form-label">Tél.:</label>
+                            <input type="tel" class="form-control" id="exampleInputTel" name="exampleInputTel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDate" class="form-label">Tél.:</label>
+                            <input type="date" class="form-control" id="exampleInputDate" name="exampleInputDate"
+                                min="2025-07-09" max="2025-07-15">
+                            <input type="time" class="form-control" id="exampleInputTime" name="exampleInputTime"
+                                min="12:00" max="23:00">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 </body>
